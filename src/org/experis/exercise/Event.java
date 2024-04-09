@@ -23,4 +23,40 @@ public class Event {
         this.reservedPlaces = 0;
     }
 
+    // Getter e Setter
+    public String getTitle(){
+        return title;
+    }
+
+    public void setTitle(String title){
+        this.title = title;
+    }
+
+    public LocalDate getData(){
+        return data;
+    }
+
+    public void setData(LocalDate data){
+        this.data = data;
+    }
+
+    public int getTotalPlaces(){
+        return totalPlaces;
+    }
+
+    public void setTotalPlaces(int totalPlaces){
+        this.totalPlaces = totalPlaces;
+    }
+
+    public int getReservedPlaces(){
+        return reservedPlaces;
+    }
+
+    public void setReservedPlaces(int reservedPlaces){
+        this.reservedPlaces = reservedPlaces;
+    }
+
+    // Metodo per poter prenotare un posto
+
+
 }
