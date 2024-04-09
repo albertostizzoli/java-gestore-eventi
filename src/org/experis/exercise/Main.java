@@ -11,7 +11,7 @@ public class Main {
         System.out.println("Inserisci i dati dell'evento: ");
         System.out.print("Titolo: ");
         String title = scanner.nextLine();
-        System.out.print("Data (AAAA-MM-GG): ");
+        System.out.print("Data: ");
         // converto la data inserita in un oggetto LocalDate
         LocalDate data = LocalDate.parse(scanner.nextLine());
         System.out.print("Numero di posti totali: ");
@@ -19,7 +19,7 @@ public class Main {
         System.out.println("=======================");
 
         // Crea l'evento
-        Event event;
+        Event event = null;
         try {
             // istanzio un nuovo evento
             event = new Event(title, data, totalPlaces);
