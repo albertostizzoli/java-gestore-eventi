@@ -61,7 +61,7 @@ public class Event {
     }
 
     // Metodo per poter prenotare un posto
-    public void prenota(int numberPlaces) throws IllegalArgumentException{
+    public void bookEvent(int numberPlaces) throws IllegalArgumentException{
         // controllo se la data è precedente alla data odierna
         if(data.isBefore(LocalDate.now())) {
             throw new IllegalArgumentException("Impossibile prenotare per un evento passato");
@@ -75,7 +75,7 @@ public class Event {
     }
 
     // Metodo per poter disdire un posto
-    public void disdici(int numberPlaces) throws IllegalArgumentException{
+    public void cancelEvent(int numberPlaces) throws IllegalArgumentException{
         // controllo se la data è precedente alla data odierna
         if(data.isBefore(LocalDate.now())){
             throw new IllegalArgumentException("Impossibile disdire per un evento passato");
