@@ -11,15 +11,15 @@ public class Event {
 
     //Costruttore
     public Event(String title, LocalDate data, int totalPlaces) throws IllegalArgumentException{
-        // Controlla se la data dell'evento è precedente alla data odierna
+        // controllo se la data dell'evento è precedente alla data odierna
         if (data.isBefore(LocalDate.now())){
             throw new IllegalArgumentException("La data dell'evento è già passata");
         }
-        // Controlla se il numero totale di posti è minore o uguale a zero
+        // controllo se il numero totale di posti è minore o uguale a zero
         if(totalPlaces <= 0){
             throw new IllegalArgumentException("Il numero dei posti deve essere positivo");
         }
-        // Inizializza i campi della classe con i valori forniti
+        // inizializzo i campi della classe con i valori forniti
         this.title = title;
         this.data = data;
         this.totalPlaces = totalPlaces;
